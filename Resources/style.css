@@ -1,0 +1,158 @@
+* {
+    border: 1px red solid !important;
+}
+
+html {
+    font-size: 16px;
+    color: rgb(54, 54, 54);
+    font-family: Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*Navigation*/
+.nav_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 8px;
+    position: relative;
+    
+}
+#colmar_academy {
+    font-size: 1.5rem;
+}
+#colmar {
+    font-weight: bold;
+}
+#academy {
+    color: gray;
+}
+.nav_container .nav_logo {
+    display: flex;
+    align-items: center;
+}
+.nav_container .nav_logo .img_logo {
+    height: 100%;
+}
+.nav_container .nav_info {
+    padding-top: 25px;
+    padding-bottom: 16px;
+    padding-right: 0;
+    text-align: right;
+    text-wrap:nowrap;
+}
+a {
+    margin-right: 16px;
+    font-size: 16px;
+    color: gray;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(54, 54, 54);
+}
+@media only screen and (max-width: 510px) {
+    .nav_container .nav_info, #colmar_academy {
+        display: none;
+      }
+    .nav_container {
+        display: flex;
+    }
+    .nav_container .nav_logo {
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+    .nav_container .nav_logo .img_logo {
+        height: 50%;
+    }
+    .nav_container .nav_logo .img_logo2 {
+        height: 50%;
+        
+    }
+    .nav_container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nav_container .nav_logo .img_logo2:hover {
+        opacity: 60%;
+    }
+    .nav_container .nav_logo .img_logo:hover {
+        opacity: 60%;
+    }
+    }
+
+@media only screen and (min-width: 510px) {
+    .nav_container .nav_logo .img_logo2 {
+       display: none; 
+    }
+}
+
+
+/*Banner*/
+.banner_container {
+position: relative;
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(191, 191, 191);
+}
+
+
+.banner_container .banner_img {
+    width: 55%;
+    height: auto;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+@media only screen and (max-width: 500px) {
+    .banner_container .banner_img {
+      margin-top: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+      width: 100%;
+      }
+    }
+
+.banner_container .banner_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner_container .banner_text {
+    margin: auto 24px auto 60px;
+    text-align: center;
+}   
+@media only screen and (max-width: 500px) {
+    .banner_container .banner_text {
+      margin-top: 32px;
+      margin-left: 24px;
+      margin-bottom: 32px;
+      width: 100%;
+      }
+      h1{ font-size: 2rem;}
+    }
+.banner_container .banner_text .center_text {
+    margin: auto;
+}
+.banner_container .banner_text .center_text .button_banner {
+    height: 40px;
+    width: 100%;
+    color:  rgb(191, 191, 191);
+    background-color: rgb(54, 54, 54) ;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    z-index: 10;
+    position: relative;
+    font-weight: 600;
+}
+.banner_container .banner_text .center_text .button_banner:hover {
+    background-color: rgb(104, 104, 104);
+    color: rgb(207, 207, 207);
+}
